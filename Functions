@@ -1,0 +1,4 @@
+def dirasium_numbers(start, finish):
+	for i in range(start, finish):
+		if sum(pow(int(x), index+1) for index,x in enumerate(str(i)))==i:
+			print(i)
